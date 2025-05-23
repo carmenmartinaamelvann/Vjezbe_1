@@ -20,7 +20,7 @@ for i in range(1, 1000):
     y[i]=y[i-1]+v_y[i-1]*dt
     if y[i]<0:
         break
-plt.figure(figsize=(12,8))
+plt.figure(figsize=(14,8))
 plt.subplot(3, 1, 1)
 plt.plot(x[:i+1], y[:i+1])
 plt.title('Putanja')

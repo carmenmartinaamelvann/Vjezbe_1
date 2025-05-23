@@ -22,12 +22,13 @@ x1=input()
 y1=input()
 x2=input()
 y2=input()
-e=input('Unesi ili ekran ili spremanje_PDF')
-if e=='spremanje_PDF':
-    ime_datoteke=input().strip()
+ekran=input()
+spremanje_PDF()
+if spremanje_PDF:
+    ime_datoteke=input()
 else:
     ime_datoteke=''
-crtanje(x1, y1, x2, y2,)
+crtanje(x1, y1, x2, y2, ekran, spremanje_PDF, ime_datoteke)
 
 
 

@@ -14,10 +14,10 @@ def crtanje(x_1, x_2, y_1, y_2):
     else:
         plt.show()
     return jedn 
-x1=float(input('x_1'))
-x2=float(input('x_2'))
-y1=float(input('y_1'))
-y2=float(input('y_2'))
+x1=float(input('x_1:'))
+x2=float(input('x_2:'))
+y1=float(input('y_1:'))
+y2=float(input('y_2:'))
 ispis=crtanje(x1, x2, y1, y2)
 print('Jednadzba ', ispis)
 

@@ -11,11 +11,11 @@ def unosenje_koord(unos):
         if pise=='':
             print('Ovo nije dobro . Potrebno je unijeti.')
     konacno=float(pise)
-    return pise 
-x_1=unosenje_koord('Unesi x_1')
-x_2=unosenje_koord('Unesi x_2')
-y_1=unosenje_koord('Unesi y_1')
-y_2=unosenje_koord('Unesi y_2')
+    return konacno
+x_1=unosenje_koord('Unesi x_1:')
+x_2=unosenje_koord('Unesi x_2:')
+y_1=unosenje_koord('Unesi y_1:')
+y_2=unosenje_koord('Unesi y_2:')
 ispis=jedn_pravca(x_1, x_2, y_1, y_2)
 print(f' Jednadzba pravca je : {ispis} ')
         

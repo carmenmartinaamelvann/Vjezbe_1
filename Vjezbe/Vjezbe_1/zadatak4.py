@@ -5,11 +5,13 @@ def jedn_pravca(x_1, x_2, y_1, y_2):
     ods=y_2 - k*x_2
     return 'y= {}*x + {}'.format(k, ods)
 def unosenje_koord(unos):
-    while True:
-        try:
-            return float(input(unos))
-        except ValueError:
-            print('Ovo što je uneseno nije dobro. Treba unijeti brojeve koji predstavljaju koordinate')
+    pise=''
+    while pise=='':
+        pise=input(unos)
+        if pise=='':
+            print('Ovo nije dobro . Potrebno je unijeti.')
+    konacno=float(pise)
+    return pise 
 x_1=unosenje_koord('Unesi x_1')
 x_2=unosenje_koord('Unesi x_2')
 y_1=unosenje_koord('Unesi y_1')

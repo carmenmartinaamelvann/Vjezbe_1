@@ -1,0 +1,22 @@
+import numpy as np
+malo_n=np.array([99.8, 100.1, 99.9, 100.2, 100.0])
+np.random.seed(42)
+veliko_n=np.random.normal(loc=100.0, scale=0.2, size=10000)
+n_1=len(malo_n)
+srednja_vrijed=np.mean(malo_n)
+kvadrati_ods_1=(malo_n- srednja_vrijed)**2
+sigman_1=np.sqrt(np.sum(kvadrati_ods_1)/n_1)
+s_1=np.sqrt(np.sum(kvadrati_ods_1)/(n_1-1))
+s_x_1=s_1/np.sqrt(n_1)
+n_2=len(veliko_n)
+srednja_vrijedd=np.mean(veliko_n)
+kvadrati_ods_2=(veliko_n- srednja_vrijedd)**2
+sigman_2=np.sqrt(np.sum(kvadrati_ods_2)/(n_2))
+s_2=np.sqrt(np.sum(kvadrati_ods_2)/(n_2 - 1))
+s_x_2=s_2/np.sqrt(n_2)
+print('sigman_1=', sigman_1)
+print('s_1=', s_1)
+print('s_x_1=', s_x_1)
+print('sigman_2=', sigman_2)
+print('s_2', s_2)
+print('s_x_2', s_x_2)

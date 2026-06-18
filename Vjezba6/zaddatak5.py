@@ -14,9 +14,13 @@ kvadrati_ods_2=(veliko_n- srednja_vrijedd)**2
 sigman_2=np.sqrt(np.sum(kvadrati_ods_2)/(n_2))
 s_2=np.sqrt(np.sum(kvadrati_ods_2)/(n_2 - 1))
 s_x_2=s_2/np.sqrt(n_2)
+razlika_za_mali=((s_1- sigman_1)/sigman_1)*100
+razlika_za_veliki=((s_2- sigman_2)/sigman_2)*100
 print('sigman_1=', sigman_1)
 print('s_1=', s_1)
 print('s_x_1=', s_x_1)
-print('sigman_2=', sigman_2)
+print('sigman_2=', sigman_2) 
 print('s_2', s_2)
 print('s_x_2', s_x_2)
+print(razlika_za_mali)
+print(razlika_za_veliki)
